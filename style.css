@@ -5,53 +5,40 @@ body{
 
 @media only screen and (min-width: 768px) {
     body {background-color: blue;
-        font-size: 3rem;}
-    #large
-    {
-        visibility: visible;
+        font-size: 3rem;
+            }
 
-    }
     div
     {
         flex-direction: row;
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (min-width: 300px){
     body {background-color: green;
         font-size: 2rem;
+        flex-wrap: wrap;
     }
     #small
     {
-        width: (100%/3)*2;
+        width: calc(100% / 3 * 2);
     }
     #medium
     {
-        width: (100%/3);
-        visibility: visible
-    }
+        width: calc(100% / 3);
+           }
     #large
     {
         width: 100%;
     }
-
-}
+  }
 @media only screen and (max-width: 300px) {
-    body {background-color: red;
+    body {
+        background-color: red;
         font-size: 1rem;
     }
-    #small
-    {
-        position: absolute;
-        visibility: visible
-    }
-    #medium
 
-    {
-        visibility: hidden;
+    div {
+        flex-direction: column;
     }
-}
-
-div{
-    visibility: hidden;
 }

@@ -8,7 +8,7 @@ body{
         background-color: blue;
         font-size: 3rem;
         display: flex;
-        flex-wrap: row;
+        flex-direction: row;
     }
 
     #small {
